@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myBlogApp">
+  <head>
+    <meta charset="utf-8"/>
+    <title>HariBlog.com</title>
+    <!-- inject:vendor:css -->
+    <link rel="stylesheet" href="/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="/ngDialog/css/ngDialog.css">
+    <link rel="stylesheet" href="/ngDialog/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/clean-blog.css">
+    <link rel="stylesheet" href="/css/mixins.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/customer/customer.css">
+    <link rel="stylesheet" href="/css/header/home.css">
+    <link rel="stylesheet" href="/css/home/home.css">
+    <link rel="stylesheet" href="/css/todo/todo.css">
+    <!-- endinject -->
+  </head>
+  <body>   
+    <nav-header></nav-header>
+    
+    <ng-view></ng-view>
+    <!-- inject:vendor:js -->
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/angular-resource/angular-resource.js"></script>
+    <script src="/angular-ui-grid/ui-grid.js"></script>
+    <script src="/ngDialog/js/ngDialog.js"></script>
+    <script src="/less/dist/less.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/customer/customer.js"></script>
+    <script src="/customer/service/customer_service.js"></script>
+    <script src="/customer/controller/customer-edit-controller.js"></script>
+    <script src="/customer/controller/customer-controller.js"></script>
+    <script src="/todo/todo.js"></script>
+    <script src="/todo/todo-controller.js"></script>
+    <script src="/header/home.js"></script>
+    <script src="/header/home-controller.js"></script>
+    <script src="/home/home.js"></script>
+    <script src="/home/home-nav-directive.js"></script>
+    <script src="/home/home-controller.js"></script>
+    <script src="/app.js"></script>
+    <script src="/my-blog-app-templates.js"></script>
+    <!-- endinject --> 
+  </body>
+</html>
