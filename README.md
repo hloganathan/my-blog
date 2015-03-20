@@ -1,6 +1,13 @@
 my-blog-app
 ============
-## Onetime Setup
+## First time Setup
+
+To clone this project
+```bash
+git clone git@github.com:hloganathan/my-blog.git
+```
+To move to project 
+cd my-blog
 If you dont have `gulp` and `bower` installed globally before please do this.
 
 ```bash
@@ -11,6 +18,11 @@ This is required to be done if the `package.json` is updated antime.
 
 ```bash
 npm install
+```
+This is required to be done if the `bower.json` is updated antime.
+
+```bash
+bower install
 ```
 ## Development
 
