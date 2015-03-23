@@ -1,8 +1,8 @@
 
-angular.module('myBlogApp', [
+angular.module('myblog', [
   'ngRoute','ngResource',
-  'myBlogApp.home',
-  'myBlogApp.todo'
+  'myblog.home',
+  'myblog.todo'
 ])
 .config(['$routeProvider',
         function($routeProvider) {

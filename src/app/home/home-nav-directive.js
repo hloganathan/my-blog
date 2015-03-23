@@ -1,4 +1,4 @@
-angular.module('myBlogApp.home').directive('navHeader', function() {
+angular.module('myblog.home').directive('navHeader', function() {
   'use strict';
     return {
         restrict: 'E',

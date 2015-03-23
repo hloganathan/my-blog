@@ -1,1 +1,1 @@
-angular.module('myBlogApp.todo', []);
+angular.module('myblog.todo', []);

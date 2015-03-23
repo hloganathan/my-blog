@@ -1,4 +1,4 @@
-angular.module('myBlogApp.home', []).config(['$routeProvider',
+angular.module('myblog.home', []).config(['$routeProvider',
     function($routeProvider) {
         'use strict';
         $routeProvider

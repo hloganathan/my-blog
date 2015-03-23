@@ -4,7 +4,7 @@ describe('TodoCtrl', function () {
   var todoCtrl,
       scope;
 
-  beforeEach(module('myBlogApp'));
+  beforeEach(module('myblog'));
 
   beforeEach(inject(function ($injector) {
     scope = $injector.get('$rootScope');
