@@ -8,7 +8,7 @@ git clone git@github.com:hloganathan/myblog.git
 ```
 To move to project 
 ```bash
-cd my-blog
+cd myblog
 ```
 If you dont have `gulp` and `bower` installed globally before please do this.
 

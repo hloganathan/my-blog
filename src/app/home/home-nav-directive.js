@@ -24,7 +24,7 @@ angular.module('myblog.home').directive('navHeader', function() {
                 }
                 return active;
 
-            }
+            };
         }
-    }
+    };
 });

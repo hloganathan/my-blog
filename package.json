@@ -51,6 +51,8 @@
     "gulp-connect": "^2.2.0",
     "lodash": "^3.0.0",
     "gulp-webserver": "^0.9.0",
-    "gulp-flatten": "0.0.4"
+    "gulp-flatten": "0.0.4",    
+    "connect": "^3.3.4",
+    "connect-pushstate":"^1.0.0"
   }
 }

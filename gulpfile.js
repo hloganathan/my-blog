@@ -16,14 +16,14 @@ var gulp = require('gulp'),
     tar = require('gulp-tar'),
     gzip = require('gulp-gzip'),
     isWatching = false,
-    proxy = require('proxy-middleware'),
+    /*Commenting for enabling html5Mode to true 
+    proxy = require('proxy-middleware'), */
     url = require('url'),
     flatten = require('gulp-flatten'),
     connect = require('gulp-connect'),
+    pushState = require('connect-pushstate'), //Added for enabling html5Mode to true   
     _ = require('lodash');
-
 //Configure your proxy for integrating with services
-//
 var configuration = {
     proxyOptions: _.extend(url.parse('http://demo-venkatvp.rhcloud.com/services'), {
         route: '/services',
@@ -215,7 +215,9 @@ gulp.task('statics', function() {
         livereload: true,
         middleware: function() {
             return [(function() {
-                return proxy(configuration.proxyOptions);
+                /*Commenting for enabling html5Mode to true  
+                return proxy(configuration.proxyOptions);*/
+                return pushState(); // Added for enabling html5Mode to true  
             })()];
         }
     });

@@ -2,6 +2,7 @@
 <html ng-app="myblog">
   <head>
     <meta charset="utf-8"/>
+    <base href="/">
     <title>HariBlog.com</title>
     <!-- inject:vendor:css -->
     <link rel="stylesheet" href="/angular-ui-grid/ui-grid.css">
@@ -21,9 +22,44 @@
     <!-- endinject -->
   </head>
   <body>   
-    <nav-header></nav-header>
-    
+    <nav-header></nav-header> 
     <ng-view></ng-view>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hloganathan">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; HariBlog.com 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- inject:vendor:js -->
     <script src="/angular/angular.js"></script>
     <script src="/angular-route/angular-route.js"></script>
@@ -36,9 +72,9 @@
     <!-- endinject -->
     <!-- inject:js -->
     <script src="/customer/customer.js"></script>
-    <script src="/customer/service/customer_service.js"></script>
     <script src="/customer/controller/customer-edit-controller.js"></script>
     <script src="/customer/controller/customer-controller.js"></script>
+    <script src="/customer/service/customer_service.js"></script>
     <script src="/todo/todo.js"></script>
     <script src="/todo/todo-controller.js"></script>
     <script src="/home/home.js"></script>
