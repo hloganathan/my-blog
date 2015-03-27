@@ -16,7 +16,7 @@ var gulp = require('gulp'),
     tar = require('gulp-tar'),
     gzip = require('gulp-gzip'),
     isWatching = false,
-    /*Commenting for enabling html5Mode to true 
+    /*Commenting for enabling html5Mode to true.
     proxy = require('proxy-middleware'), */
     url = require('url'),
     flatten = require('gulp-flatten'),
