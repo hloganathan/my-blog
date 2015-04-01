@@ -16,16 +16,19 @@ var gulp = require('gulp'),
     tar = require('gulp-tar'),
     gzip = require('gulp-gzip'),
     isWatching = false,
-    /*Commenting for enabling html5Mode to true.
-    proxy = require('proxy-middleware'), */
+    /*comment these line if you are enabling  htmlmode to true
+     proxy = require('proxy-middleware'), 
+    url = require('url'),
+    */    
+    proxy = require('proxy-middleware'), 
     url = require('url'),
     flatten = require('gulp-flatten'),
     connect = require('gulp-connect'),
-    pushState = require('connect-pushstate'), //Added for enabling html5Mode to true   
+   // pushState = require('connect-pushstate'), //Added for enabling html5Mode to true   
     _ = require('lodash');
 //Configure your proxy for integrating with services
 var configuration = {
-    proxyOptions: _.extend(url.parse('http://demo-venkatvp.rhcloud.com/services'), {
+    proxyOptions: _.extend(url.parse('http://demo-haritha.rhcloud.com/services'), {
         route: '/services',
         headers: {
             custom: 'My Custom Header'
@@ -215,9 +218,10 @@ gulp.task('statics', function() {
         livereload: true,
         middleware: function() {
             return [(function() {
-                /*Commenting for enabling html5Mode to true  
-                return proxy(configuration.proxyOptions);*/
-                return pushState(); // Added for enabling html5Mode to true  
+                 
+                return proxy(configuration.proxyOptions);
+                /*Commenting for disabling html5Mode to true 
+                return pushState(); // Added for enabling html5Mode to true  */
             })()];
         }
     });
