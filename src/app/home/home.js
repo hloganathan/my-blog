@@ -1,6 +1,7 @@
 angular.module('myblog.home', []).config(['$routeProvider', '$locationProvider',
     function($routeProvider,$locationProvider) {
         'use strict';
+        $locationProvider.html5Mode(true);
         $routeProvider
             .when('/home', {
                 controller: 'HomeCtrl',
@@ -14,7 +15,10 @@ angular.module('myblog.home', []).config(['$routeProvider', '$locationProvider',
             }).when('/contact', {
                 controller: 'HomeCtrl',
                 templateUrl: 'home/contact.html'
-            });
-        $locationProvider.html5Mode(true);
-    }
+            }).when('/login', {
+                controller: 'HomeCtrl',
+                templateUrl: 'home/login.html'
+            }).otherwise({ redirectTo: '/' });
+    },
+
 ]);
